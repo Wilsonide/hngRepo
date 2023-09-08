@@ -10,8 +10,8 @@ app.get("/api/", (req, res) => {
         "current_day": new Intl.DateTimeFormat('en-us',{weekday:"long"}).format(new Date()),
         "utc_time": new Date().toISOString(),
         "track" : req.query.track,
-        "github_file_url": "/",
-        "github_repo_url": "/",
+        "github_file_url": "/https://github.com/Wilsonide/hngRepo/tree/master/backend/",
+        "github_repo_url": "/https://github.com/Wilsonide/hngRepo/tree/master/backend",
         "status_code": 200,
 
     })
@@ -22,3 +22,5 @@ app.get("/api/", (req, res) => {
 app.listen(5100, ()=> {
     console.log('listening on port 5100');
   });
+
+  module.exports = app;
