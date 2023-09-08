@@ -10,8 +10,8 @@ app.get("/api/", (req, res) => {
         "current_day": new Intl.DateTimeFormat('en-us',{weekday:"long"}).format(new Date()),
         "utc_time": new Date().toISOString(),
         "track" : req.query.track,
-        "github_file_url": "/https://github.com/Wilsonide/hngRepo/tree/master/backend/",
-        "github_repo_url": "/https://github.com/Wilsonide/hngRepo/tree/master/backend",
+        "github_file_url": "https://github.com/Wilsonide/hngRepo/blob/master/backend/api/index.js",
+        "github_repo_url": "https://github.com/Wilsonide/hngRepo",
         "status_code": 200,
 
     })
