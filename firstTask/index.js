@@ -1,8 +1,9 @@
-let myTime = document.getElementById("time");
-let pday = document.getElementById("day");
-const date = new Date()
-/* const utcTime = date.UTC(); */
-const dayFormat = new Intl.DateTimeFormat('en-US',{weekday:'long'})
-/* console.log("utc in milliseconds", utcTime); */
-pday.textContent=  dayFormat.format(date);
-myTime.textContent = Date.now();
+const day = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+
+ const time = document.querySelector('[data-testid="currentUTCTime"]');
+
+const timeNow = `${new Date().getUTCHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}` 
+
+time.innerHTML = timeNow; 
+
+day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
