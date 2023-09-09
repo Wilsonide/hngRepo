@@ -4,6 +4,6 @@ const day = document.querySelector('[data-testid="currentDayOfTheWeek"]');
 
 const timeNow = `${new Date().getUTCHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}` 
 
-time.innerHTML = timeNow; 
+time.textContent = timeNow; 
 
 day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
