@@ -1,6 +1,6 @@
-const day = document.getElementById("day);
+const day = document.getElementById("day");
 
- const time = document.getElementById("time);
+ const time = document.getElementById("time");
 
 const timeNow = `${new Date().getUTCHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}` 
 
