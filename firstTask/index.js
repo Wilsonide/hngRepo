@@ -18,4 +18,5 @@ day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
 
 window.addEventListener('load', () => {
     updateUTCTimeEverySecond();
+    day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
 });
