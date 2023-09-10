@@ -1,22 +1,12 @@
 const day = document.querySelector('[data-testid="currentDayOfTheWeek"]');
 
+const time = document.querySelector('[data-testid="currentUTCTime"]')
 
-function updateUTCTime() {
-    const currentUTCTime = Date.now();
-    document.querySelector('[data-testid="currentUTCTime"]').textContent = currentUTCTime;
-}
+time.innerHTML = setInterval(() => Date.now(),1000)
 
-
-function updateUTCTimeEverySecond() {
-    setInterval(updateUTCTime, 1000);
-}
 
 
 
 
 day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
 
-window.addEventListener('load', () => {
-    updateUTCTimeEverySecond();
-    day.innerHTML = new Date().toLocaleString('en-US', {weekday: 'long'});
-});
