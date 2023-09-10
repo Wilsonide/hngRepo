@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="images/me.jpeg">
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
-    <div class="container">
-        <div class="top">
-            <div>
-                <img src="https://ca.slack-edge.com/T05FFAA91JP-U05S18XJY1E-c8dd7193e366-512" alt="Abudon">
-            </div>
-            <div class="sect">
-                <h1 data-testid="slackUserName">Abudon</h1>
-                <h3 data-testid="myTrack">Frontend</h3>
-            </div>
-        </div>
-        <div class="middle">
-            <div class="nowrap">
-                <h2 data-testid="currentDayOfTheWeek"></h2>
-                <h3 data-testid="currentUTCTime"></h3>
-            </div>
-        
-            
-            <a href="https://github.com/Wilsonide/hngRepo/tree/master/firstTask" data-testid="githubURL">GithubUrl</a>
-        </div>
-    </div>
+    <title>HNG Frontend Stage One</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="bio">
+            <h1 data-testid="slackUserName">Wilson Icheku</h1>
+            <img src="https://ca.slack-edge.com/T05FFAA91JP-U05S18XJY1E-c8dd7193e366-512" alt="Abudon" data-testid="slackDisplayImage">
+        </div>
+        
+        <div class="daytime">
+            <h2 data-testid="currentDayOfTheWeek"></h2>
+            <h3 data-testid="currentUTCTime"></h3>
+        </div>
+
+        <div class="track">
+            <h3 data-testid="myTrack">Frontend</h3>
+        </div>
+        
+        <a href="https://github.com/Wilsonide/hngRepo/tree/master/firstTask" target="_blank" data-testid=“githubURL”>Github Url</a>
+
+    </div>
+
+
+
 </body>
 </html>
