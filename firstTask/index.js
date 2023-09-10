@@ -2,7 +2,10 @@ const day = document.querySelector('[data-testid="currentDayOfTheWeek"]');
 
 const time = document.querySelector('[data-testid="currentUTCTime"]');
 
-time.innerHTML = setInterval(() => Date.now(),1000)
+const myTime = setInterval(function(){
+Date.now()},1000)
+
+time.innerHTML = myTime
 
 
 
