@@ -5,7 +5,7 @@ const myTime = function(){
   document.querySelector('[data-testid="currentUTCTime"]').innerHTML = now;
 };
 
-setInterval(myTime,1);
+setInterval(myTime,1000);
 
 
 
