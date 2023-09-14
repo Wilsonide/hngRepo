@@ -41,9 +41,10 @@ Before you begin, ensure you have met the following requirements:
    ```
    npm install express mongoose cors --save
    ```
-4. Setup Express web server
-   ```
+4. Setup Express web server.
+
    In the root folder, let’s create a new server.js file:
+   ```
 
    const express = require("express");
    const cors = require("cors");
