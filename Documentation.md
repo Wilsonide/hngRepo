@@ -14,7 +14,7 @@ Below is a list of the available endpoints in this API, along with their descrip
   - For POST requests:
     ```json
     {
-      "name": "Maureen Oguche",
+      "name": "Wilson",
     }
     ```
 - **Response Format**:
@@ -25,13 +25,40 @@ Below is a list of the available endpoints in this API, along with their descrip
       "statusCode": 200,
       "message": "successfully added person",
       "data": {
-        "id": 6,
-        "name": "Jacobs"
+        "id": 1,
+        "name": "Wilson"
       }
     }
     ```
-
 ### Endpoint 2: /api/user_id
+
+- **Description**: This endpoint returns the statu
+s code, list of all created resource and a message
+- **HTTP Methods**: `POST`
+                                                  - **Example Usage**:                                - GET: `/api`
+
+- **Request Format**:
+  - For GET requests:
+    ```user_id: "Wilson"```                       
+- **Response Format**:
+  - Status Code: 200 OK
+  - Response Body:
+    ```json
+    [
+    {                                                   "statusCode": 200,
+      "message": "successfully retrieved person",
+      "data": {
+        "id": 1,
+        "name": "Wilson"                                }
+    },
+    {                                                   "statusCode": 200,                                "message": "successfully retrieved person",
+      "data": {
+        "id": 2,                                          "name": "Abudon"                                }
+    }
+    ]
+    ```
+
+### Endpoint 3: /api/user_id
 
 - **Description**: This endpoint returns the status code, created resource and a message
 - **HTTP Methods**: `POST`
@@ -58,7 +85,7 @@ Below is a list of the available endpoints in this API, along with their descrip
     ```
 
 
-### Endpoint 3: /api/user_id
+### Endpoint 4: /api/user_id
 
 - **Description**: This endpoint returns the status code, created resource and a message
 - **HTTP Methods**: `PUT`
@@ -84,14 +111,14 @@ Below is a list of the available endpoints in this API, along with their descrip
       "statusCode": 200,
       "message": "successfully updated person",
       "data": {
-        "id": 6,
+        "id": 1,
         "name": "Ronaldo"
       }
     }
     ```
 
 
-### Endpoint 4: /api/user_id
+### Endpoint 5: /api/user_id
 
 - **Description**: This endpoint returns the status code, created resource and a message
 - **HTTP Methods**: `DELETE`
