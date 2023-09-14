@@ -30,11 +30,10 @@ Below is a list of the available endpoints in this API, along with their descrip
       }
     }
     ```
-### Endpoint 2: /api/user_id
+### Endpoint 2: /api
 
-- **Description**: This endpoint returns the statu
-s code, list of all created resource and a message
-- **HTTP Methods**: `POST`
+- **Description**: This endpoint returns the status code, list of all created resource and a message
+- **HTTP Methods**: `GET`
                                                   - **Example Usage**:                                - GET: `/api`
 
 - **Request Format**:
@@ -61,7 +60,7 @@ s code, list of all created resource and a message
 ### Endpoint 3: /api/user_id
 
 - **Description**: This endpoint returns the status code, created resource and a message
-- **HTTP Methods**: `POST`
+- **HTTP Methods**: `GET`
 
 - **Example Usage**:
   - GET: `/api/user_id`
